@@ -1,0 +1,42 @@
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "1" } }
+{"superhero":"Batman", "publisher":"DC", "alter_ego":"Bruce Wayne","first_appearance":"Detective Comics","characters":"Bruce Wayne","artURL":"img/batman.png", "age" : 20}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "2" } }
+{"superhero":"Superman", "publisher":"DC", "alter_ego":"Kal-El","first_appearance":"Action Comics", "characters":"Kal-El","artURL":"img/superman.jpg", "age" : 21}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "3" } }
+{"superhero":"Flash", "publisher":"DC", "alter_ego":"Jay Garrick","first_appearance":"Flash Comics", "characters":"Jay Garrick, Barry Allen, Wally West, Bart Allen","artURL":"img/flash.jpg", "age" : 22}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "4" } }
+{"superhero":"Green Lantern", "publisher":"DC", "alter_ego":"Alan Scott","first_appearance":"All-American Comics","characters":"Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz","artURL":"img/greenlantern.jpg", "age" : 23}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "5" } }
+{"superhero":"Green Arrow", "publisher":"DC", "alter_ego":"Oliver Queen","first_appearance":"More Fun Comics","characters":"Oliver Queen","artURL":"img/greenarrow.jpg", "age" : 24}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "6" } }
+{"superhero":"Wonder Woman", "publisher":"DC", "alter_ego":"Princess Diana","first_appearance":"All Star Comics", "characters":"Princess Diana","artURL":"img/wonderwoman.jpg", "age" : 25}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "26" } }
+{"superhero":"Wonder man", "publisher":"DC", "alter_ego":"Princess Diana","first_appearance":"All Star Comics", "characters":"Princess Diana","artURL":"img/wonderman.jpg", "age" : 26}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "7" } }
+{"superhero":"Martian Manhunter", "publisher":"DC", "alter_ego":"J'onn J'onzz","first_appearance":"Detective Comics","characters":"Martian Manhunter","artURL":"img/martianmanhunter.jpg", "age" : 26}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "8" } }
+{"superhero":"Robin/Nightwing", "publisher":"DC", "alter_ego":"Dick Grayson","first_appearance":"Detective Comics","characters":"Dick Grayson","artURL":"img/nightwing.jpg", "age" : 27}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "9" } }
+{"superhero":"Blue Beetle", "publisher":"DC", "alter_ego":"Dan Garret","first_appearance":"Mystery Men Comics", "characters":"Dan Garret, Ted Kord, Jaime Reyes","artURL":"img/bluebeetle.PNG", "age" : 28}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "10" } }
+{"superhero":"Black Canary", "publisher":"DC", "alter_ego":"Dinah Drake","first_appearance":"Flash Comics","characters":"Dinah Drake, Dinah Lance","artURL":"img/blackcanary.png", "age" : 29}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "11" } }
+{"superhero":"Spider Man", "publisher":"Marvel", "alter_ego":"Peter Parker","first_appearance":"Amazing Fantasy","characters":"Peter Parker","artURL":"img/spiderman.jpg", "age" : 20}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "12" } }
+{"superhero":"Captain America", "publisher":"Marvel", "alter_ego":"Steve Rogers","first_appearance":"Captain America Comics", "characters":"Steve Rogers","artURL":"img/captainamerica.jpg", "age" : 21}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "13" } }
+{"superhero":"Iron Man", "publisher":"Marvel", "alter_ego":"Tony Stark","first_appearance":"Tales of Suspense","characters":"Tony Stark","artURL":"img/ironman.jpg", "age" : 22}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "14" } }
+{"superhero":"Thor", "publisher":"Marvel", "alter_ego":"Thor Odinson","first_appearance":"Journey into Myster","characters":"Thor Odinson","artURL":"img/thor.jpg", "age" : 23}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "15" } }
+{"superhero":"Hulk", "publisher":"Marvel", "alter_ego":"Bruce Banner","first_appearance":"The Incredible Hulk", "characters":"Bruce Banner","artURL":"img/hulk.jpg", "age" : 24}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "16" } }
+{"superhero":"Wolverine", "publisher":"Marvel", "alter_ego":"James Howlett","first_appearance":"The Incredible Hulk","characters":"James Howlett","artURL":"img/wolverine.jpg", "age" : 25}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "17" } }
+{"superhero":"Daredevil", "publisher":"Marvel", "alter_ego":"Matthew Michael Murdock","first_appearance":"Daredevil", "characters":"Matthew Michael Murdock","artURL":"img/daredevil.jpg", "age" : 26}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "18" } }
+{"superhero":"Hawkeye", "publisher":"Marvel", "alter_ego":"Clinton Francis Barton","first_appearance":"Tales of Suspense","characters":"Clinton Francis Barton","artURL":"img/hawkeye.jpg", "age" : 27}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "19" } }
+{"superhero":"Cyclops", "publisher":"Marvel", "alter_ego":"Scott Summers","first_appearance":"X-Men", "characters":"Scott Summers","artURL":"img/cyclops.jpg", "age" : 28}
+{ "index" : { "_index" : "superheroes", "_type" : "ficha", "_id" : "20" } }
+{"superhero":"Silver Surfer", "publisher":"Marvel", "alter_ego":"Norrin Radd","first_appearance":"The Fantastic Four","characters":"Norrin Radd","artURL":"img/silversurfer.png", "age" : 29}

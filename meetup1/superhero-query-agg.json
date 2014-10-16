@@ -1,0 +1,12 @@
+{
+	"aggs": {
+		"by_publisher": {
+			"terms": { "field": "publisher" },
+			"aggs" : {
+				"avg_age" : {
+					"avg" : { "field" : "age" }
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	doc : {
+		"nombre" : "Clar",
+		"apellido" : "Kent",
+		"alias" : "Superman",
+		"domicilio" : {
+			"calle" : "proción, 7",
+			"localidad" : "madrid"
+		},
+		"superpoderes" : "puede volar, tiene super fuerza, visión laser, etc",
+		"tags" : ["volar", "fuerza", "supervista"],
+		"fecha" : "1940-06-07"
+	},
+	doc_as_upsert : true
+}

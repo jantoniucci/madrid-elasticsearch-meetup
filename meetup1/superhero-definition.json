@@ -1,0 +1,23 @@
+{
+	"settings" : {
+        "number_of_shards" : 10,
+        "number_of_replicas" : 2
+    },
+	"mappings": {
+		"ficha" : {
+		    "_routing": {
+		    	"required": true, 
+		    	"path": "publisher"
+		    },
+		    "_source" : { "enabled" : true },
+		    "properties": {
+		       "superhero": {"type": "string"},
+		       "publisher": {"type": "string"},
+		       "alter_ego": {"type": "string"},
+		       "first_appearance": {"type": "string"},
+		       "characters": {"type": "string"},
+		       "artURL" : {"type": "string"} 
+		    }
+		}
+	}
+}

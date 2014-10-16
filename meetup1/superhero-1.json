@@ -1,0 +1,12 @@
+{
+	"nombre" : "Allan",
+	"apellido" : "Scott",
+	"alias" : "Linterna verde",
+	"domicilio" : {
+		"calle" : "proción, 7",
+		"localidad" : "madrid"
+	},
+	"superpoderes" : "con el anillo puede volar, convertirse en diferentes armas, etc",
+	"tags" : ["volar", "fuerza", "transformarse"],
+	"fecha" : "1940-06-07"
+}

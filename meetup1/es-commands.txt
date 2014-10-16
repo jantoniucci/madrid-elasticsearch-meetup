@@ -1,0 +1,58 @@
+tar -xvf ~/Downloads/elasticsearch-1.3.4.tar.gz
+
+// status
+curl 'http://localhost:9200/'
+
+// shutdown
+curl 'http://localhost:9200/_shutdown'
+curl -XPOST 'http://localhost:9200/_shutdown'
+
+// crear un índice y añadir un elemento
+curl -XPUT 'http://localhost:9200/superheroes/ficha/1' -d @/Users/javier/madrid-elasticsearch-meetup/src/superhero-1.json
+
+// obtenerlo
+curl -XGET 'http://localhost:9200/superheroes/ficha/1?pretty'
+
+// modificarlo
+curl -XPOST 'http://localhost:9200/superheroes/ficha/1/_update' -d '{ "doc" : {  "nombre" : "ALAN Scott" } }'
+
+// modificarlo con upsert --> VERSIÓN !!!
+curl -XPOST 'http://localhost:9200/superheroes/ficha/1/_update' -d '{ "doc" : {  "nombre" : "Alan SCOTT" }, "doc_as_upsert" : "true" }'
+
+// modificarlo con un script ---> añadir script.disable_dynamic: false
+curl -XPOST 'http://localhost:9200/superheroes/ficha/1/_update' -d '{ "script" : "ctx._source.tags += nuevoTag" , "params" : {"nuevoTag" : "invisibilidad" } }'
+
+// otras cosas que se pueden hacer con un script : añadir y quitar campo, borrar
+curl -XPOST 'http://localhost:9200/superheroes/ficha/1/_update' -d '{ "script" : "ctx._source.aka=\"Green Lintern\"" }'
+curl -XPOST 'http://localhost:9200/superheroes/ficha/1/_update' -d '{ "script" : "ctx._source.remove(\"aka\")" }'
+
+// borrarlo
+curl -XDELETE 'http://localhost:9200/superheroes/ficha/1'
+
+// bulk insert
+curl -s -XPOST 'http://localhost:9200/_bulk' --data-binary @/Users/javier/madrid-elasticsearch-meetup/src/superheros.json; echo
+
+// simple query
+curl -XGET 'http://localhost:9200/superheroes/ficha/_search?pretty'
+curl -XGET 'http://localhost:9200/superheroes/ficha/_search?pretty&q=superhero:Wonder'
+
+// query dsl
+curl -XGET 'http://localhost:9200/superheroes/ficha/_search?pretty' -d '{ query : { match : { superhero : "Wonder" }}}'
+curl -XGET 'http://localhost:9200/superheroes/ficha/_search?pretty' -d '{ query : { match : { superhero : "Wonder Woman" }}}'
+curl -XGET 'http://localhost:9200/superheroes/ficha/_search?pretty' -d '{ query : { match_phrase : { superhero : "Wonder Woman" }}}'
+
+// query más complicada
+curl -XGET 'http://localhost:9200/superheroes/ficha/_search?pretty' -d @/Users/javier/madrid-elasticsearch-meetup/src/superheros-query.json
+
+// query con agregación
+curl -XGET 'http://localhost:9200/superheroes/ficha/_search?pretty' -d @/Users/javier/madrid-elasticsearch-meetup/src/superheros-query-agg.json
+
+// instalar el head
+./bin/plugin -install mobz/elasticsearch-head
+open http://localhost:9200/_plugin/head/
+
+// añadir un nodo
+// cambiar el nombre del cluster --> no vale el de por defecto
+// ver que los activos siguen en el original
+curl -XDELETE 'http://localhost:9200/superheroes'
+curl -s -XPOST 'http://localhost:9200/_bulk' --data-binary @/Users/javier/madrid-elasticsearch-meetup/src/superheros.json; echo

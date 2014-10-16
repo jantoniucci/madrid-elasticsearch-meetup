@@ -1,0 +1,21 @@
+{
+    "query" : {
+        "filtered" : {
+            "filter" : {
+                "range" : {
+                    "age" : { "gt" : 24 } 
+                }
+            },
+            "query" : {
+                "match" : {
+                    "superhero" : "Wonder Woman" 
+                }
+            }
+        }
+    },
+    "highlight": {
+        "fields" : {
+            "superhero" : {}
+        }
+    }
+}
